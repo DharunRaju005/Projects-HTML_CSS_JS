@@ -1,0 +1,81 @@
+body{
+    font-family:sans-serif;
+    background-color: hwb(240 55% 20% / 0.47);
+}
+
+.title{
+    display: flex;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    margin-top: 30px;
+    color:color-mix(in srgb-linear, 90% color percentage);
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:50px;
+}
+.input-text{
+    width: 170px;
+    height: 40px;
+    border: none;
+    text-align:left;
+    font-size:smaller;
+    margin-left:20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.input-date{
+    border: none;
+    width: 170px;
+    height: 40px;
+    text-align: left;
+    font-size:medium;
+    font-weight:400;
+    margin-left:20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.add-btn{
+    width: 100px;
+    height: 45px;
+    border: none;
+    margin-left:20px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    text-align: center;
+}
+.add-btn:hover{
+    font-weight:600;
+}
+.todo-grid{
+    margin-top: 40px;
+    margin-left: 32rem;
+    display:grid;
+    grid-template-columns: 100px 100px 150px;
+    column-gap: 70px;
+    row-gap: 30px;
+    text-align: center;
+}
+.delete-btn{
+    border:none;
+    height:30px;
+    color: aliceblue;
+    background-color: red;
+}
+.delete-btn:hover{
+    background-color: aliceblue;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    height:35px;
+    width: 150px;
+    cursor: pointer;
+}
+

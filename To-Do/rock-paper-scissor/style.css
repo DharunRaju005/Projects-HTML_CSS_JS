@@ -1,0 +1,67 @@
+body{
+    background-color:bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: 800px;
+    scroll-behavior: smooth;
+}
+.hero-banner{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    margin-left: 0;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.move-icon{
+    height: 60px;
+    padding: 50px;
+}
+.btn{
+    border-color: rgb(203, 203, 12);
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
+    border-width: 10px;
+    border-radius: 50%;
+    background-color: hwb(60 4% 96%);
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition:all 0.3s 0s ease-in;
+    cursor: pointer;
+}
+.reset-btn{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    
+}
+.result{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.score{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
