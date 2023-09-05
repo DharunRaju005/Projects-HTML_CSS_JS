@@ -48,10 +48,18 @@ div{
 .reset-btn{
     background-color: transparent;
     border-radius: 50%;
+    border: none;  
+    cursor: pointer;
+}
+
+.auto-btn{
+    background-color: transparent;
     border: none;
+    cursor: pointer;
     
 }
 .result{
+    margin-top: -20px;
     font-size: 25px;
     font-weight: 400;
     display: flex;
