@@ -19,9 +19,8 @@ function autoplay(){
             intervalId=setInterval(function(){
                 const move=pickComputerMove();
                 playGame(move);
-            },
-        1000);
-        isAutoPlaying=true;
+            },1000);
+            isAutoPlaying=true;
     }
     else{
         clearInterval(intervalId);

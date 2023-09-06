@@ -54,6 +54,8 @@ div{
 
 .auto-btn{
     background-color: transparent;
+    height: 30px;
+    width:20px;
     border: none;
     cursor: pointer;
     
