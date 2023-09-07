@@ -1,6 +1,6 @@
 body{
     font-family:sans-serif;
-    background-color: hwb(240 55% 20% / 0.47);
+    background-color: hwb(0 0% 100% / 0.47);
 }
 
 .title{
@@ -48,10 +48,12 @@ body{
     border: none;
     margin-left:20px;
     background-color: greenyellow;
-    border-radius: 20px;
+    border-radius: 9px;
     text-align: center;
 }
 .add-btn:hover{
+    color:  greenyellow;
+    background-color: black;
     font-weight:600;
 }
 .todo-grid{
