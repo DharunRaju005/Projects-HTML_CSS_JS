@@ -7,10 +7,7 @@ function render(){
          const html=
             `<div>${name}</div>
             <div>${dueDate}</div>
-            <button class="delete-btn"onclick="
-            todoList.splice(${index},1);
-            render();
-            ">Delete</button> 
+            <button class="delete-btn js-delete-btn">Delete</button> 
         `;
         todoListHTML+=html;
     })
@@ -30,9 +27,15 @@ function render(){
     //     todoListHTML+=html;
         console.log(todoListHTML);
         document.querySelector('.js-list').innerHTML=todoListHTML;
-    }
+        document.querySelectorAll('.js-delete-btn').forEach((deleteButton,index)=>{
+        deleteButton.addEventListener('click',()=>{
+            todoList.splice(index,1);
+            render();  
+        });
+    });
+}
 
-
+document.querySelector('.js-todo-btn').addEventListener('click',()=>{addTodo();});
  
 function addTodo(){
     const listElement=document.querySelector('.js-input');
