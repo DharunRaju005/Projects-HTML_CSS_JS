@@ -60,6 +60,12 @@ html,body{
 #nav h4{
     text-transform: uppercase;
     font-weight: 500;
+    scale: 1;
+}
+#nav h4:hover{
+    color: #95C11E;
+    scale: 1.2;
+    font-weight:700;
 }
 video{
     height: 100%;
