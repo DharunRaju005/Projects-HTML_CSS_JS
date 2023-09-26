@@ -92,6 +92,12 @@ input{
     outline: none;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+      
+}
+
 /* Resusable CSS classes */
 
 .container{
@@ -1065,5 +1071,46 @@ input{
 
 .details__meta{
     border-top: 1px solid var(--border-color-alt);
-    padding-top:1rem ;
+    padding-top:1rem;
 }
+
+/* DETAILES INFO & REVIEW */
+
+.detail__tabs{
+    display: flex;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.detail__tab{
+    font-family: var(--second-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    cursor: pointer;
+}
+
+.detail__tab.active-tab{
+    color: var(--first-color);
+}
+
+.details__tab-content:not(.active-tab){
+    display: none;
+}
+
+.info__table tr th,
+.info__table tr td{
+    border: 1px solid var(--border-color-alt);
+    padding:.625rem 6.25rem;
+}
+
+
+.info__table tr th{
+    font-weight: var(--weight-500);
+    text-align: center;
+}
+
+.info__table tr td {
+    color: var(--text-color-light);
+}
+
+
