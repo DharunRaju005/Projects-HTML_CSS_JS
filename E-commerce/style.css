@@ -1348,3 +1348,63 @@
     .cart__total .btn{
         display: inline-flex;
     }
+
+    /* CHECKOUT */
+
+    .checkout__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+    .checkout__group.section__title{
+        font-size: var(--large-font-size);
+    }
+
+    .checkout__title{
+        font-size: var(--small-font-size);
+    }
+
+    .order__table tr th,
+    .order__table tr td{
+        border: 1px solid var(--border-color-alt);
+        text-align: center;
+        padding: .5rem;
+    }
+
+    .order__table tr th{
+        color: var(--title-color);
+        font-size: var(--small-font-size);
+    }
+
+    .table__quantity,
+    .order__subtitle{
+        font-size: var(--small-font-size);
+    }
+
+     
+
+    .order__img{
+        width: 80px;
+    }
+
+    .checkout__group:nth-child(2){
+        border:1px solid var(--border-color-alt) ;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    /* LOGIN AND REGISTER */
+    .login-register__container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start;
+    }
+
+    .login,
+    .register{
+        border: 1px solid var(--border-color-alt);
+        padding: 1rem;
+    }
+
+
+
+
