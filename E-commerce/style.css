@@ -10,10 +10,10 @@
         --first-color-alt:hsl(129,44%,94%);
         --second-color:hsl(34,94%,87%);
         --title-color:hsl(0,0%,13%);
-        --text-color:hsl(154,13%,32%);
+        --text-color:hsl(60, 5%, 7%);
         --text-color-light:hsl(60,1%,56%);
         --body-color:hsl(0,0%,100%);
-        --container-color:hsl(0,0%,100%);
+        --container-color:hsla(120, 49%, 53%, 0.904);
         --border-color:hsl(129,36%,85%);
         --border-color-alt:hsl(113,15%,90%);
 
@@ -1407,19 +1407,39 @@
         font-size: var(--small-font-size);
     }
 
-
-
-
-     
-
     .order__img{
         width: 80px;
     }
-
     .checkout__group:nth-child(2){
         border:1px solid var(--border-color-alt) ;
         padding: 2rem;
         border-radius: 0.5rem;
+    }
+
+    /* COMAPRE */
+
+    .compare__table tr th,
+    .compare__table tr td{
+        padding: 0.5rem;
+        border: 1px solid var(--border-color-alt);
+    }
+
+    .compare__table tr th{
+        color:var(--text-color-light);
+        font-size: var(--small-font-size);
+    }
+
+    .compare__table tr td{
+        align-items: center;
+    }
+
+    .compare__colors{
+        justify-content: center;
+    }
+
+    .table__weight,
+    .table__dimension{
+        font-size: var(--small-font-size);
     }
 
     /* LOGIN AND REGISTER */
@@ -1431,8 +1451,91 @@
     .login,
     .register{
         border: 1px solid var(--border-color-alt);
-        padding: 1rem;
+        padding: 2rem;
+        border-radius: 0.5fr;
     }
+
+    /* ACCOUNTS */
+    .accounts__container{
+        grid-template-columns:4fr 8fr ;
+    }
+
+    .account__tabs{
+        border: 1px solid var(--border-color-alt);
+        border-radius: 0.25rem;
+    }
+
+    .account__tab{
+        padding: 1rem 2rem;
+        color:var(--title-color);
+        font-size: var(--small-font-size);
+        display: flex;
+        align-items: center;
+        column-gap: 0.625rem;
+        cursor: pointer;
+    }
+
+    .account__tab.active-tab{
+        background-color: var(--first-color);
+        color: var(--body-color);
+    }
+
+    .account__tab:not(:last-child){
+        border-bottom:1px solid var(--border-color-alt) ;
+    }
+
+    .tab__content:not(.active-tab){
+        display: none;
+    }
+
+    .tab__content{
+        border: 1px solid var(--border-color-alt);
+        border-bottom: 1px solid var(--border-color-alt);
+    }
+
+    .tab__header{
+        background-color: var(--container-color);
+        border-bottom: 1px solid var(--border-color-alt);
+        padding: 1rem;
+        font-size: var(--small-font-size);
+    }
+
+    .tab__body{
+        padding: 1rem;   
+    }
+
+    .placed__order-table tr th{
+        color: var(--text-color);
+        text-align: left;
+    }
+
+    .placed__order-table tr th,
+    .placed__order-table tr td{
+        border: 1px solid var(--border-color-alt);
+        padding: 0.5rem;
+        font-size: var(--small-font-size);
+    }
+
+    .view__order,
+    .edit{
+        color:var(--first-color);
+    }
+
+    .address{
+        font-style: normal;
+        font-size: var(--small-font-size);
+        line-height: 1.5rem;
+    }
+
+    .city{
+        margin-bottom: 0.25rem;
+    }
+
+    .edit{
+        font-size: var(--small-font-size);
+    }
+
+
 
 
 
