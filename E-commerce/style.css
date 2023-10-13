@@ -444,7 +444,8 @@
     /* PRODUCTS */
     .tabs__btns{
         display: flex;
-        column-gap: 0.75rem;
+        flex-wrap:wrap;
+        gap: 0.75rem;
         margin-bottom: 2rem;
     }
 
@@ -1295,6 +1296,7 @@
     .cart__actions{
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
         gap: 0.75rem;
         margin-top: 1.5rem;
     }
@@ -1825,7 +1827,9 @@
         }
 
         .compare__table tr td{
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content:center ;
         }
     }
 
@@ -1844,12 +1848,89 @@
             padding:1.25rem ;
         }
 
-        pagination{
-            column-gap: ;
+        .pagination{
+            column-gap:0.5rem ;
+            margin-top: 2.5rem;
         }
 
+        .pagination__link{
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+        }
 
+        .placed__order-table th,
+        .order__table tr th{
+            display: none;
+        }
 
+        .placed__order-table tr td,
+        .order__table tr td,
+        .info__table tr td {
+            display:block;
+        }
+
+        .form__group{
+            grid-template-columns: 1fr;
+        }
+
+        .cart__total{
+            padding: 1.25rem;
+        }
+
+        .payment__methods{
+            margin-block: 2.25rem 2.5rem;
+        }
+
+        .detail__tabs{
+            column-gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .review__single{
+            column-gap: 1rem;
+        }
+
+        .footer__title{
+            margin-top: 0.25rem;
+        }
+
+        .footer__bottom{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width:350px){
+        .action__btn{
+            width: 36px;
+            height: 36px;
+            line-height: 38px;
+        }
+
+        .cart__btn{
+            bottom: 1.4rem;
+            right: 1.25rem;
+        }
+
+        .showcase__item{
+            width: 70px;
+        }
+
+        .showcase__content{
+            width: calc(100%-86px);
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev{
+            display: none;
+        }
+
+        .compare__table tr th,
+        .cart__total-table tr td{
+            display: block;
+            width: 100%;
+        }
     }
     
 
